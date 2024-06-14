@@ -1,101 +1,154 @@
-
-.container{
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    width: 1500px;
-    font-style: normal;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  hsl(30, 54%, 90%);
+}
+.main-content{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding:4px;
+    flex-direction: column;
+    border-radius: 8px;
+    max-width: 50%;
+    margin: 6rem 0;
 }
 img{
-    width: 100%;
-    display: block;
-    padding: auto;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-size: cover;
+    margin-bottom: 8px;
+    border-radius:8px ;
+    /* margin-left: 24px; */
+    
 }
-.intro{
-   padding: 20px;
+section{
+    margin: 16px;
 }
-.intro p{
-    color: #61585c;
+h1{
+    font-size: 32px;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    color:  hsl(24, 5%, 18%);
+    margin-bottom: 16px;
 }
-h4{
-    margin:10px;
-    padding: 10px;
-    color: #7c485f;
+.omelette-intro p{
+    margin: 0;
+    font-family: " Serif",outfit;
+    margin-bottom: 24px;
+    color: hsl(36, 2%, 54%);
+}
+.preparation h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 16px;
 }
 .preparation{
-    background-color: #fff7fc;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    border-radius: 15px;
-    color: #61585c;
-    margin:10px;
-    padding: 10px;
-    line-height: 2;
-   
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    font-family: " Serif",outfit;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 12px;
+    color: hsl(30, 10%, 34%);
+}
+.preparation ul{
+    padding-left: 24px;
+
 }
 .preparation li::marker{
-    color:#7c485f;
+    color: hsl(332, 51%, 32%);
+    font-size: 16px;
 }
-.ingredients p{
-    font-size: 30px;
-    font-style: normal;
-    margin:10px;
-    padding: 10px;
-    color: #70392a;
+.preparation li{
+    margin-bottom: 8px;
 }
-.ingredients li {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    color: #61585c;
-    line-height: 2;
+.ingredients{
+    display: flex;
+    flex-direction: column;
+}
+.ingredients h2{
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.ingredients li{
+    font-family: " Serif",outfit;
+    color: hsl(30, 10%, 34%);
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+.ingredients ul{
+    padding-left: 20px;
 }
 .ingredients li::marker{
-    color: #70392a;
+    color: hsl(14, 45%, 36%);
 }
-.instructions p{
-    font-size: 30px;
-    margin:10px;
-    padding: 10px;
-    color: #70392a;
+.ingredients hr{
+    margin-top: 12px;
 }
-.instructions li {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    color: #61585c;
-    line-height: 2;
+.instructions h2{
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+}
+.instructions ol{
+    font-family: " Serif",outfit;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+.instructions li{
+    margin-bottom: 12px;
+    color: hsl(30, 10%, 34%);
+}
+.instructions hr{
+    margin-top: 32px;
 }
 .instructions li::marker{
-    color: #70392a;
+    color:hsl(14, 45%, 36%);
+
+}
+.nutrition h2{
+    font-family: "Young Serif", serif;
+    color:hsl(14, 45%, 36%);
+    font-weight: 400;
+}
+.nutrition-table div{
+    display: flex;
+    justify-content: space-between;
+}
+.nutrition p{
+    color: hsl(36, 2%, 54%);
+    font-family: " Serif",outfit; 
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.nutrition hr{
+    margin-top: 16px;
+}
+.nutrition-table{
+    margin: 24px auto;
+}
+.nutrition-components,.nutrition-value{
+    font-family: " Serif",outfit; 
+    flex-basis: 50%;
+}
+.nutrition-components{
+    align-items: flex-end;
+    color: hsl(36, 2%, 54%);
+}
+.nutrition-value{
+    color:hsl(14, 45%, 36%);
+    font-weight: bold;
 }
 hr{
-    color: #61585c;
-    width:95%;
+    opacity: 0.3;
 }
-.nutrients p{
-    color: #61585c;
-    margin:10px;
-    padding: 10px;
-}
-#title-nutrients{
-    font-size: 30px;
-    margin:10px;
-    padding: 10px;
-    color: #70392a;
-}
-.nutrients table{
-    border-collapse: collapse;
-    width: 90%;
-}
-.nutrients tr{
-        border-bottom: 1px solid #ccc;
-        color: #70392a;
-}
-.nutrients th {  
-    padding: 10px;
-    margin: 10px;
-    text-align: left;
-    color: #61585c;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
